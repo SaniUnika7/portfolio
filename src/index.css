@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 .skill-container{
-  height: 60px;
   overflow: hidden;
-
 }
 .scroll-up-down {
   display: flex;
@@ -11,14 +9,16 @@
   gap: 10px;
   animation: floatUpDown 4s ease-in-out infinite;
 }
-.image{
-  border: 27.5px solid black;
-}
 
-.outer-border{
+.mid-border{
   height: 440px;
   width: 440px;
 }
+
+/* .outer-border{
+  height: 440px;
+  width: 440px;
+} */
 
 @keyframes floatUpDown {
  0%, 11%    { transform: translateY(0%);}

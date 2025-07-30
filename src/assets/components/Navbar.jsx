@@ -1,5 +1,5 @@
 const Navbar = () =>
-    <nav className="mr-2 ml-6 text-white bg-black">
+    <nav className="mr-2 ml-6 text-white bg-black md:block hidden">
     <div className="myName text-3xl">
         <a href="home.jsx" className="name">Unika Portfolio</a>
         </div>
