@@ -1,22 +1,59 @@
-const Navbar = () =>
-    <nav className="mr-2 ml-6 text-white bg-black md:block hidden">
+const Navbar = () => (
+  <div className="mainnav bg-black">
+  <nav className="mr-2 w-full p-2 h-24 text-white bg-black md:block hidden" style={{borderBottom: "2px solid rgba(255, 255, 255, 0.5)"}}>
     <div className="myName text-3xl">
-        <a href="home.jsx" className="name">Unika Portfolio</a>
-        </div>
-        <div className="links flex float-right gap-5 text-2xl">
-    <div className="home hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
-        <a href="home.jsx" className="bg-black w-32">Home</a>
+      <a href="home.jsx" className="name">
+        Unika Portfolio
+      </a>
     </div>
-    <div className="about hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
-        <a href="Aboutme.jsx" className="bg-black w-32">About me</a>
+    <div className="links flex float-right gap-5 text-2xl">
+      <div className="home hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
+        <a href="home.jsx" className="bg-black w-32">
+          Home
+        </a>
+      </div>
+      <div className="about hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
+        <a href="#main" className="bg-black w-32">
+          About me
+        </a>
+      </div>
+      <div className="skills hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
+        <a href="#skill" className="bg-black w-32">
+          Skills
+        </a>
+      </div>
+      <div className="contact hover:bg-gradient-to-r from-blue-500 via-purple-500 to-pink-700 h-9">
+        <a href="#contact" className="bg-black w-32">
+          Contact me
+        </a>
+      </div>
     </div>
-    <div className="skills hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
-        <a href="Skills.jsx" className="bg-black w-32">Skills</a>
-    </div>
-    <div className="experience hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-">
-        <a href="Experience.jsx" className="bg-black w-32">Experience</a>
-    </div>
-    </div>
-    </nav>
+  </nav>
+  <nav className="for-phone bg-black p-2 text-white h-10 md:hidden">
+    <div className="links flex float-right gap-5 text-ms">
+      <div className="home hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
+        <a href="home.jsx" className="bg-black w-32">
+          Home
+        </a>
+      </div>
+      <div className="about hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
+        <a href="#main" className="bg-black w-32">
+          About me
+        </a>
+      </div>
+      <div className="skills hover:bg-gradient-to-r from-blue-700 to-fuchsia-600 h-9">
+        <a href="#skill" className="bg-black w-32">
+          Skills
+        </a>
+      </div>
+      <div className="contact hover:bg-gradient-to-r from-blue-500 via-purple-500 to-pink-700 h-9">
+        <a href="#contact" className="bg-black w-32">
+          Contact me
+        </a>
+      </div>
+      </div>
+  </nav>
+  </div>
+);
 
-export default Navbar
+export default Navbar;
