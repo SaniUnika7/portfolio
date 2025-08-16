@@ -6,18 +6,25 @@ import Home from './assets/components/home'
 import Aboutme from './assets/components/Aboutme'
 import SkillCard from './assets/components/SkillCard'
 import Contactme from './assets/components/Contactme'
+import Footer from './assets/components/footer'
+import { createBrowserRouter, Outlet } from 'react-router'
 
 function App() {
 
   return (
     <div>
     <Navbar />
-    <Home/>
-    <Aboutme/>
-    <SkillCard/>
-    <Contactme/>
+    <main className="h-screen">
+      <Outlet/>
+    </main>
+    <Footer/>
     </div>
   )
 }
 
 export default App
+
+{/* <Home/>
+    <Aboutme/>
+    <SkillCard/>
+    <Contactme/> */}

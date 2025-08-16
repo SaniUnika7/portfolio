@@ -3,12 +3,13 @@ import { faEnvelope, faUser, faPenToSquare } from '@fortawesome/free-solid-svg-i
 
 const sendmsg = () =>
     alert("Message is sent!!")
+
 const Contactme = () => (
   <div className="contact h-screen bg-black text-white">
     <div className="heading text-5xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-pink-700">
       Contact me
     </div>
-    <div className="form">
+    <div className="form md:mt-2">
       <div
         id="form"
         className="form p-12 h-full"
@@ -16,7 +17,7 @@ const Contactme = () => (
       >
         <h1 className="text-4xl">Please give your Feedback or concerns here</h1>
         <div className="form-elements flex flex-col gap-5">
-          <div className="name flex gap-3 items-center border-2 h-10 md:w-3/12">
+          <div className="name flex gap-3 md:mt-2 items-center border-2 h-10 md:w-3/12">
           <FontAwesomeIcon icon={faUser}/>
             <input
               type="text"

@@ -14,7 +14,7 @@ const Aboutme = () => (
     style={{borderBottom: "2px solid rgba(255, 255, 255, 0.5)"}}
     >
       <div className="descr md:w-5/12">
-        <p className="text-3xl mt-5">
+        <p className="md:text-3xl text-2xl mt-5">
           My name is Unika Dhungana and I am currently a student.
           <span className="text-5xl block mt-10 mb-5 text-gray-300">
             Education
